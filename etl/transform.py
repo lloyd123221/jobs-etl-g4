@@ -1,5 +1,5 @@
 from prefect import task 
 
 @task 
-def TRANSFORMAR_jobs():
+def transform_jobs():
     print("TRANSFORMACIÓN DE OFERTAS DE LINKEDIN")
