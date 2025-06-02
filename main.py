@@ -6,9 +6,9 @@ from etl.load import load_jobs
 @flow
 def etl_pipeline():
     print("PIPELINE DE ETL LINKEDIN")
-    jobs = extract_jobs()
-    jobs_transformed = transform_jobs(jobs)
-    load_jobs(jobs_transformed)
+    extract_jobs()
+    transform_jobs()
+    load_jobs()
     print("ETL COMPLETADO")
     
 etl_pipeline()
